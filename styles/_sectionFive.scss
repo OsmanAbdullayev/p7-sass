@@ -1,0 +1,101 @@
+section.sectionFive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    div.container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+            .label {
+                @include labelWhite;
+            }
+
+            h2 {
+                font-size: 2em;
+                color: black;
+                line-height: 3em;
+                font-weight: 700;
+            }
+
+            div.article {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                div.cell {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    div.image {
+                        width: 90%;
+
+                        img {
+                            border-radius: 5%;
+                        }
+                    }
+                    position: relative;
+                    div.card {
+                        position: absolute;
+                        bottom: -4em;
+                        right: 5px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        border-radius: 15px;
+                        width: 90%;
+                        height: 8em;
+                        background-color: white;
+                       box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+                        
+                        div.nameProfile {
+                            display: flex;
+                            height: 5em;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                            h2 {
+                                font-size: 1.2em;
+                                color: $primary;
+                                font-weight: 900;
+                            }
+
+                            p {
+                                font-size: 0.8em;
+                                color: darkblue;
+                            }
+                        }
+                        div.social {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 30%;
+                            button {
+                                width: 2em;
+                                height: 2em;
+                                border: 1px solid $primary;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                               box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+                                
+                                &:hover {
+                                    transition: 0.5s;
+                                    background-color: rgba(92, 133, 205, 0.293);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+    }
+}

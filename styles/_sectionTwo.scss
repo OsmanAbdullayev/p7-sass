@@ -1,0 +1,49 @@
+section.sectionTwo {
+    @include center;
+    height: 140vh;
+
+    div.container {
+        width: 80%;
+        @include spacearound(row);
+        flex-wrap: wrap;
+        div.cell {
+            @include center();
+            flex-direction: column;
+            text-align: center;
+            width: 30%;
+            height: 60vh;
+            
+            transition: 0.6s;
+            &:hover {
+                box-shadow: 0 0 10px 4px rgb(31 66 135 / 10%);
+            }
+            :hover {
+            box-shadow: none;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                font-weight: 600;
+                line-height: 3em;
+            }
+
+            p {
+                line-height: 1.5em;
+            }
+
+            
+
+            img {
+                transition: 0.5s;
+                &:hover {
+                    transform: scale(1.2) rotate(90deg);
+                    filter: invert(100%);
+    
+                    
+                }
+            }
+
+           
+        }
+    }
+}

@@ -1,0 +1,924 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300;500;700,900&family=Montserrat:wght@500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Montserrat, sans-serif;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: black;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 12vh;
+  font-weight: 600;
+  z-index: 2;
+}
+header div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+header div:first-of-type img {
+  width: 150px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: right;
+  width: 45%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 70%;
+}
+header div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  justify-content: left;
+}
+header div:last-of-type button {
+  width: 12em;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background-color: #896eff;
+  font-weight: 600;
+  color: white;
+  font-size: 1em;
+  border-color: transparent;
+  transition: 0.5s;
+}
+header div:last-of-type button:hover {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.826);
+  top: 0;
+  width: 100%;
+}
+
+.sectionOne {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/bnr1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.sectionOne div.background {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(137, 110, 255, 0.5411764706);
+  width: 100%;
+  height: 70vh;
+}
+.sectionOne div.background div {
+  width: 75%;
+}
+.sectionOne div.background div li, .sectionOne div.background div a {
+  color: white;
+  font-size: 1em;
+}
+.sectionOne div.background div h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  height: 80px;
+}
+
+section.sectionTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 140vh;
+}
+section.sectionTwo div.container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section.sectionTwo div.container div.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  height: 60vh;
+  transition: 0.6s;
+}
+section.sectionTwo div.container div.cell:hover {
+  box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.1);
+}
+section.sectionTwo div.container div.cell :hover {
+  box-shadow: none;
+}
+section.sectionTwo div.container div.cell h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 3em;
+}
+section.sectionTwo div.container div.cell p {
+  line-height: 1.5em;
+}
+section.sectionTwo div.container div.cell img {
+  transition: 0.5s;
+}
+section.sectionTwo div.container div.cell img:hover {
+  transform: scale(1.2) rotate(90deg);
+  filter: invert(100%);
+}
+
+section.sectionThree {
+  background-color: #896eff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+section.sectionThree .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.sectionThree .container div.image {
+  width: 30%;
+  -webkit-animation: pulse 5s infinite;
+          animation: pulse 5s infinite;
+  transform: scale(1.2) rotate(5deg);
+  transition: 1s;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.526));
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.526));
+  }
+}
+section.sectionThree .container div.image:hover {
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.526));
+}
+section.sectionThree .container div.article {
+  width: 65%;
+  height: 50vh;
+  display: flex;
+  align-items: left;
+  justify-content: space-around;
+  flex-direction: column;
+}
+section.sectionThree .container div.article h4 {
+  width: 9em;
+  text-align: center;
+  line-height: 2.5em;
+  background-color: rgba(255, 255, 255, 0.145);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+section.sectionThree .container div.article h2 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+section.sectionThree .container div.article p {
+  color: white;
+}
+section.sectionThree .container div.article div.form {
+  width: 100%;
+  position: relative;
+  width: 70%;
+  display: flex;
+}
+section.sectionThree .container div.article div.form input {
+  width: 100%;
+  line-height: 3.5em;
+  text-align: left;
+  font-size: 1em;
+  border-radius: 50px;
+  border: none;
+  padding-left: 1em;
+}
+section.sectionThree .container div.article div.form button {
+  width: 30%;
+  line-height: 3.1em;
+  text-align: center;
+  color: white;
+  background-color: #896eff;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  top: 0.2em;
+  right: 0.2em;
+  z-index: 9;
+}
+section.sectionThree .container div.article div.form button:hover {
+  background-color: rgba(76, 0, 130, 0.471);
+}
+
+section.sectionFour {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sectionFour .container {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section.sectionFour .container div.article {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+}
+section.sectionFour .container div.article div.label {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+section.sectionFour .container div.article div.label .labelWhite {
+  width: 9em;
+  text-align: center;
+  line-height: 2.5em;
+  background-color: rgba(111, 111, 111, 0.101);
+  border-radius: 10px;
+  color: #896eff;
+  font-weight: 600;
+}
+section.sectionFour .container div.article h2 {
+  font-size: 2.2em;
+  line-height: 1.3em;
+  color: black;
+  font-weight: 700;
+}
+section.sectionFour .container div.article div.cell {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 20%;
+}
+section.sectionFour .container div.article div.cell h4 {
+  font-size: 1.2em;
+  font-weight: 699;
+  line-height: 1.5em;
+}
+section.sectionFour .container div.article div.cell .icon {
+  width: 40%;
+}
+section.sectionFour .container div.article div.cell .icon img {
+  width: 90%;
+}
+section.sectionFour .container div.article div.cell .icon:hover {
+  transition: 1s;
+  transform: scale(0.8) rotate(30deg);
+  filter: invert(100%);
+}
+section.sectionFour .container div.article div.cell .text {
+  width: 70%;
+}
+section.sectionFour .container div.article div.cell:nth-of-type(3) {
+  width: 70%;
+}
+section.sectionFour .container div.article div.cell:nth-of-type(3) .icon {
+  width: 60%;
+}
+section.sectionFour .container div.article div.cell:nth-of-type(3) .icon img {
+  width: 90%;
+}
+section.sectionFour .container div.image {
+  width: 50%;
+}
+section.sectionFour .container div.image img {
+  width: 100%;
+  -webkit-animation: pulse 10s infinite;
+          animation: pulse 10s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.9) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.526));
+  }
+}
+
+section.sectionFive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+}
+section.sectionFive div.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+section.sectionFive div.container .label {
+  width: 9em;
+  text-align: center;
+  line-height: 2.5em;
+  background-color: rgba(111, 111, 111, 0.101);
+  border-radius: 10px;
+  color: #896eff;
+  font-weight: 600;
+}
+section.sectionFive div.container h2 {
+  font-size: 2em;
+  color: black;
+  line-height: 3em;
+  font-weight: 700;
+}
+section.sectionFive div.container div.article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+section.sectionFive div.container div.article div.cell {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+section.sectionFive div.container div.article div.cell div.image {
+  width: 90%;
+}
+section.sectionFive div.container div.article div.cell div.image img {
+  border-radius: 5%;
+}
+section.sectionFive div.container div.article div.cell div.card {
+  position: absolute;
+  bottom: -4em;
+  right: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  width: 90%;
+  height: 8em;
+  background-color: white;
+  box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.1);
+}
+section.sectionFive div.container div.article div.cell div.card div.nameProfile {
+  display: flex;
+  height: 5em;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+section.sectionFive div.container div.article div.cell div.card div.nameProfile h2 {
+  font-size: 1.2em;
+  color: #896eff;
+  font-weight: 900;
+}
+section.sectionFive div.container div.article div.cell div.card div.nameProfile p {
+  font-size: 0.8em;
+  color: darkblue;
+}
+section.sectionFive div.container div.article div.cell div.card div.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+section.sectionFive div.container div.article div.cell div.card div.social button {
+  width: 2em;
+  height: 2em;
+  border: 1px solid #896eff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.1);
+}
+section.sectionFive div.container div.article div.cell div.card div.social button:hover {
+  transition: 0.5s;
+  background-color: rgba(92, 133, 205, 0.293);
+}
+
+section.sectionSix {
+  height: 90vh;
+}
+section.sectionSix .backgroundImage {
+  background-image: url(../images/bg5.jpg);
+}
+section.sectionSix .backgroundImage .backgroundColor {
+  background-color: rgba(137, 110, 255, 0.5411764706);
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card {
+  background-color: white;
+  height: 45vh;
+  width: 30%;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.p {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.299);
+  width: 80%;
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.p p {
+  font-size: 1.1em;
+  color: grey;
+  line-height: 1.2em;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile {
+  height: 15vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileImage img {
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid blue;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileData h2 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileData p {
+  color: grey;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileData div.star {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2em;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileData div.star span {
+  color: rgba(128, 128, 128, 0.423);
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.left div.card div.profile div.profileData div.star .checked {
+  color: orange;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.right {
+  width: 25%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.right div.wrap {
+  height: 30vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.right div.wrap h4.label {
+  width: 9em;
+  text-align: center;
+  line-height: 2.5em;
+  background-color: rgba(255, 255, 255, 0.145);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.right div.wrap h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+}
+section.sectionSix .backgroundImage .backgroundColor div.cell div.right div.wrap p {
+  font-size: 1.2em;
+  color: white;
+}
+
+section.sectionSeven {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+section.sectionSeven div.container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.sectionSeven div.container div.left {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+section.sectionSeven div.container div.left .label {
+  width: 9em;
+  text-align: center;
+  line-height: 2.5em;
+  background-color: rgba(111, 111, 111, 0.101);
+  border-radius: 10px;
+  color: #896eff;
+  font-weight: 600;
+}
+section.sectionSeven div.container div.left h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+}
+section.sectionSeven div.container div.left div.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.sectionSeven div.container div.left div.form form {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.sectionSeven div.container div.left div.form form div.input {
+  width: 50%;
+}
+section.sectionSeven div.container div.left div.form form div.input input {
+  border-radius: 50px;
+  width: 80%;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  color: grey;
+  line-height: 3em;
+  filter: drop-shadow(8px 8px 10px rgba(0, 42, 255, 0.526));
+}
+section.sectionSeven div.container div.left div.form form div.input input:focus {
+  transition: 0.5s;
+  border: 2px solid rgba(0, 64, 255, 0.373);
+}
+section.sectionSeven div.container div.left div.form form div.input select {
+  height: 3em;
+  border-radius: 50px;
+  width: 80%;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  color: grey;
+  line-height: 3em;
+  filter: drop-shadow(8px 8px 10px rgba(0, 42, 255, 0.526));
+}
+section.sectionSeven div.container div.left div.form form div.inputWide {
+  width: 92%;
+  height: 12em;
+  display: flex;
+  justify-content: start;
+}
+section.sectionSeven div.container div.left div.form form div.inputWide input {
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  color: grey;
+  line-height: 10em;
+  filter: drop-shadow(8px 8px 10px rgba(0, 42, 255, 0.526));
+  width: 100%;
+}
+section.sectionSeven div.container div.left div.form form div.inputWide input:focus {
+  transition: 0.5s;
+  border: 2px solid rgba(0, 64, 255, 0.373);
+}
+section.sectionSeven div.container div.left div.form form div.button {
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.sectionSeven div.container div.left div.form form div.button button {
+  width: 30%;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background-color: rgba(137, 110, 255, 0.5411764706);
+  line-height: 3em;
+  filter: drop-shadow(8px 8px 10px rgba(0, 42, 255, 0.526));
+}
+section.sectionSeven div.container div.right {
+  width: 40%;
+}
+section.sectionSeven div.container div.right img {
+  width: 80%;
+}
+
+section.sectionEight {
+  background-image: url(../images/bg5.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.sectionEight div.container {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.sectionEight div.container .left {
+  width: 60%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+section.sectionEight div.container .left h4.label {
+  width: 9em;
+  text-align: center;
+  line-height: 2.5em;
+  background-color: rgba(111, 111, 111, 0.101);
+  border-radius: 10px;
+  color: #896eff;
+  font-weight: 600;
+}
+section.sectionEight div.container .left h2 {
+  font-size: 2em;
+  color: black;
+  font-weight: 700;
+}
+section.sectionEight div.container .right {
+  width: 30%;
+}
+section.sectionEight div.container .right div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.sectionEight div.container .right div button {
+  width: 50%;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  background-color: rgba(137, 110, 255, 0.5411764706);
+  line-height: 3em;
+  filter: drop-shadow(8px 8px 10px rgba(0, 42, 255, 0.526));
+}
+
+footer {
+  height: 80vh;
+  background-color: #896eff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div.container {
+  height: 70vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+footer div.container div.top {
+  width: 100%;
+  height: 8em;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.container div.top div.left img {
+  width: 100%;
+}
+footer div.container div.top div.right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div.container div.top div.right p {
+  color: white;
+  font-size: 1.2em;
+}
+footer div.container div.middle {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer div.container div.middle h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 4px solid white;
+  line-height: 2em;
+}
+footer div.container div.middle ul > li a {
+  color: white;
+  line-height: 2em;
+}
+footer div.container div.middle div.one {
+  height: 35vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+footer div.container div.middle div.one div.p {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer div.container div.middle div.one div.p p {
+  color: white;
+  line-height: 1.5em;
+}
+footer div.container div.middle div.one div.social {
+  line-height: 4em;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer div.container div.middle div.one div.social button {
+  width: 2em;
+  height: 2em;
+  border: 1px solid #896eff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 4px rgba(31, 66, 135, 0.1);
+}
+footer div.container div.middle div.two {
+  height: 35vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+footer div.container div.middle div.three {
+  height: 35vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+footer div.container div.middle div.four {
+  height: 35vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+}
+footer div.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 4em;
+  background-color: rgba(255, 255, 255, 0.252);
+}
+footer div.bottom p {
+  color: white;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

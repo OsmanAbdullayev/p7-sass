@@ -1,0 +1,127 @@
+section.sectionSix {
+    height: 90vh;
+    .backgroundImage {
+        background-image: url(../images/bg5.jpg);
+        .backgroundColor {
+            background-color: $primaryTransparent;
+            div.cell {
+                height: 70vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                div.left {
+                    width: 70%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    div.card {
+                        background-color: white;
+                        height:45vh;
+                        width: 30%;
+                        border-radius: 5%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        div.p {
+                            // background-color: green;
+                            border-bottom: 1px solid rgba(128, 128, 128, 0.299);
+                            width: 80%;
+                            height: 24vh;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            p {
+                                font-size: 1.1em;
+                                color: grey;
+                                line-height: 1.2em;
+                                
+                            }
+                        }
+                        div.profile {
+                            height: 15vh;
+                            width: 80%;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-around;
+                            div.profileImage {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                img {
+                                    width: 70px;
+                                    border-radius: 50%;
+                                    border: 3px solid blue;
+
+                                }
+                            }
+                           div.profileData {
+                             display: flex;
+                             flex-direction: column;
+                             align-items: center;
+                             justify-content: space-evenly;
+                             h2 {
+                                 color: black;
+                                 font-size: 1.5em;
+                                 font-weight: 600;
+                                 // line-height: 2em;
+                             }
+                             p {
+                                 color: grey;
+                                 // line-height: 1em;
+                             }
+                             div.star {
+                                 display: flex;
+                                 justify-content: space-around;
+                                 align-items: center;
+                                 font-size: 1.2em;
+                                //  width: 100%;
+                                 span {
+                                 // line-height: 2em;
+                                 color: rgba(128, 128, 128, 0.423);
+                                 }
+                                 .checked {
+                                     color: orange;
+                                   }
+                             }
+                           }
+                        }
+
+
+                    }
+                }
+                div.right {
+                    width: 25%;
+                    height: 40vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: start;
+                    div.wrap {
+                        height: 30vh;
+                        width: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: left;
+                        justify-content: space-around;
+                        h4.label {
+                            @include labelBlue;
+                        }
+                        h2 {
+                            color: white;
+                            font-size: 2em;
+                            font-weight: 700;
+                        }
+                        p {
+                            font-size: 1.2em;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

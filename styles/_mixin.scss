@@ -1,0 +1,35 @@
+@mixin spacearound ($direction) {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: $direction;
+    
+}
+
+@mixin center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin labelBlue{
+    width: 9em;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: rgba(255, 255, 255, 0.145);
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+@mixin labelWhite {
+    width: 9em;
+    text-align: center;
+    line-height: 2.5em;
+    background-color: rgba(111, 111, 111, 0.101);
+    border-radius: 10px;
+    color: $primary;
+    font-weight: 600;
+}

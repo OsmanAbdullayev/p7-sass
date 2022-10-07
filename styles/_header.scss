@@ -1,0 +1,64 @@
+header {
+    @include spacearound (row);
+    width: 100%;
+    height: 12vh;
+    font-weight: 600;
+    z-index: 2;
+
+        div:first-of-type{
+            @include center();
+            width: 30%;
+            img {
+                width: 150px;
+            }
+        }
+
+        nav {
+            @include center();
+            justify-content: right;
+            width: 45%;
+            ul {
+                    @include spacearound (row);
+                    width: 70%;
+               
+                }
+        }
+
+       div:last-of-type{
+            @include center();
+            width: 25%;
+            justify-content: left;
+
+              button {
+            width: 12em;
+            height: 3em;
+            @include center;
+            border-top-left-radius: 0;
+             border-bottom-right-radius: 0;
+             border-bottom-left-radius: 1.5rem;
+             border-top-right-radius: 1.5rem;
+             background-color: $primary;
+             font-weight: 600;
+             color: white;
+             font-size: 1em;
+             border-color: transparent;
+             transition: 0.5s;
+
+             &:hover {
+
+                      border-top-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                      border-bottom-right-radius: 1.5rem;
+                      border-top-left-radius: 1.5rem;
+             }
+        }
+       }
+
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.826);
+  top: 0;
+  width: 100%
+}

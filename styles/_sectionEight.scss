@@ -1,0 +1,49 @@
+section.sectionEight {
+    background-image: url(../images/bg5.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div.container {
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .left {
+            width: 60%;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-around;
+            h4.label {
+                @include labelWhite;
+            }
+            h2 {
+                font-size: 2em;
+                color: black;
+                font-weight: 700;
+            }
+        }
+        .right {
+            width: 30%;
+            div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        button {
+                            width: 50%;
+                            border-radius: 50px;
+                            border: none;
+                            text-align: center;
+                            font-size: 1em;
+                            color: rgb(255, 255, 255);
+                            background-color: $primaryTransparent;
+                            line-height: 3em;
+                            filter:  drop-shadow(8px 8px 10px rgba(0, 42, 255, 0.526));    
+                        }
+            }
+        }
+    }
+}
